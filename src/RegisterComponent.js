@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-export function RegisterForm() {
- 
+export function RegisterComponent() {
+
     const [name, setName]=useState("")
     const [email, setEmail]=useState("")
     const handleform=(e)=>
@@ -10,10 +10,9 @@ export function RegisterForm() {
         alert(name+" - "+ email)
     }
 
-  return (
-
-    <div>
-        <form onSubmit={handleform}> 
+    return (
+        <div>
+         <form onSubmit={handleform}> 
            
             <input type="text"
             placeholder="Enter the name"
@@ -28,13 +27,13 @@ export function RegisterForm() {
             onChange={(e)=>setEmail(e.target.value)}
             />
 
-
+            <br/>
+            <br/>
             <button type="submit">Submit</button>
 
-        </form>
-        <br/>
-        {name} {email}
-    </div>
-
-  );
+            </form>
+            <br/>
+            {name} {email}
+        </div>
+    );
 }

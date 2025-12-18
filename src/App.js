@@ -1,12 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import { RegisterForm } from './registerForm.js';
+import { RegisterComponent } from './RegisterComponent';
+
 
 
 function App() {
   return (
     <div className="App">
-      <RegisterForm></RegisterForm>
+      <RegisterComponent></RegisterComponent>
     </div>
   );
 }
